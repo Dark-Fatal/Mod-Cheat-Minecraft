@@ -90,6 +90,71 @@ Si le dossier `mods` n’existe pas, crée-le manuellement.
 
 ---
 
+
+## Guide d’installation Windows (pas à pas)
+
+Cette section est dédiée à **Windows 10/11**.
+
+### 1) Installer Java 21
+
+1. Ouvre un terminal (`Win` + `R` → `cmd`).
+2. Vérifie Java :
+   ```bat
+   java -version
+   ```
+3. Si Java 21 n’est pas installé, installe un JDK 21 puis redémarre le PC.
+
+### 2) Installer Fabric Loader 1.21.1
+
+1. Lance l’installateur Fabric.
+2. Choisis **Client**.
+3. Sélectionne la version Minecraft **1.21.1**.
+4. Clique sur **Install**.
+
+### 3) Ouvrir le dossier Minecraft
+
+1. Appuie sur `Win` + `R`.
+2. Colle :
+   ```text
+   %appdata%\.minecraft
+   ```
+3. Appuie sur Entrée.
+
+### 4) Préparer le dossier `mods`
+
+- Si `mods` n’existe pas, crée un dossier nommé exactement :
+  ```text
+  mods
+  ```
+
+### 5) Copier les fichiers nécessaires
+
+Dans `%appdata%\.minecraft\mods`, place :
+
+- `shadowcore-<version>.jar`
+- `fabric-api-<version>.jar`
+
+### 6) Lancer Minecraft avec le bon profil
+
+1. Ouvre le launcher officiel.
+2. En bas à gauche (ou dans Installations), sélectionne le profil **Fabric 1.21.1**.
+3. Lance le jeu.
+
+### 7) Vérifier en jeu
+
+1. Entre dans un monde.
+2. Appuie sur **P**.
+3. Le menu **ShadowCore - Admin Panel** doit apparaître.
+
+### 8) Résoudre les erreurs fréquentes (Windows)
+
+- **Le mod n’apparaît pas** : mauvais dossier (vérifie `%appdata%\.minecraft\mods`).
+- **Crash au démarrage** : version Java ou Fabric API incompatible.
+- **La touche P ne fait rien** : conflit de raccourci avec un autre mod.
+- **Les commandes échouent** : permissions admin manquantes côté serveur.
+
+---
+
 ## Vérifier que l’installation a réussi
 
 En jeu :
