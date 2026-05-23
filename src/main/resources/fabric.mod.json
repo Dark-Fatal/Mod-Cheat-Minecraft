@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "shadowcore",
+  "version": "${version}",
+  "name": "ShadowCore",
+  "description": "Quick admin command panel.",
+  "authors": ["Codex"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.shadowcore.client.ShadowCoreClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
